@@ -41,7 +41,7 @@ def extract_json(response, key):
 def vip_perform_selection(prompter, vlm, im, desc, arm_coord, samples, top_n):
   """Perform one selection pass given samples."""
   image_circles_np = prompter.add_arrow_overlay_plt(
-      image=im, samples=samples, arm_xy=arm_coord, log_image=False
+      image=im, samples=samples, arm_xy=arm_coord
   )
 
   _, encoded_image_circles = cv2.imencode(".png", image_circles_np)

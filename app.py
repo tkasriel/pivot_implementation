@@ -91,6 +91,9 @@ examples = [
 with gr.Blocks() as demo:
   gr.Markdown("""
 # PIVOT: Prompting with Iterative Visual Optimization
+
+[website](https://pivot-prompt.github.io/)
+
 The demo below showcases a version of the PIVOT algorithm, which uses iterative visual prompts to optimize and guide the reasoning of Vision-Langauge-Models (VLMs).
 Given an image and a description of an object or region, 
 PIVOT iteratively searches for the point in the image that best corresponds to the description.

@@ -11,3 +11,5 @@ license: mit
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
+arxiv paper: arxiv.org/abs/2402.07872

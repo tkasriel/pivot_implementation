@@ -93,6 +93,7 @@ with gr.Blocks() as demo:
 # PIVOT: Prompting with Iterative Visual Optimization
 
 [website](https://pivot-prompt.github.io/)
+[view on huggingface](https://huggingface.co/spaces/pivot-prompt/pivot-prompt-demo/)
 
 The demo below showcases a version of the PIVOT algorithm, which uses iterative visual prompts to optimize and guide the reasoning of Vision-Langauge-Models (VLMs).
 Given an image and a description of an object or region, 

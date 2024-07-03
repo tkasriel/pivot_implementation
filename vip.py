@@ -7,11 +7,12 @@ import copy
 import dataclasses
 import enum
 import io
-from typing import Optional, Tuple
+from typing import Any, Optional, Tuple
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.stats
+from models import ActionModel
 import vip_utils
 
 
@@ -50,7 +51,7 @@ class Sample:
 class VisualIterativePrompter:
   """Visual Iterative Prompting class."""
 
-  def __init__(self, style, action_spec, embodiment):
+  def __init__(self, style, action_spec: ActionModel, embodiment):
     self.embodiment = embodiment
     self.style = style
     self.action_spec = action_spec
@@ -65,7 +66,7 @@ class VisualIterativePrompter:
     )
 
   def navigation_action_to_coord(
-      self, action, image, center_xy, do_project=False
+      self, action, image, center_xy: tuple[int, int], do_project=False
   ):
     """Converts a ZXY or XY action to an image coordinate.
 
@@ -242,7 +243,7 @@ class VisualIterativePrompter:
       samples.append(sample)
     return samples
 
-  def add_arrow_overlay_plt(self, image, samples, arm_xy):
+  def add_arrow_overlay_plt(self, image: np.ndarray, samples, arm_xy):
     """Add arrows and circles to the image.
 
     Args:
@@ -277,6 +278,7 @@ class VisualIterativePrompter:
         1 - self.style['arrow_alpha'],
         0,
     )
+    plt.imsave("test2.png", image)
 
     overlay = image.copy()
     # Add circles.

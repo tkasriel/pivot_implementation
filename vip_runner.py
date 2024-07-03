@@ -2,11 +2,15 @@
 
 import json
 import re
+from typing import Generator
 
 import cv2
+from matplotlib import pyplot as plt
 from tqdm import trange
 import numpy as np
+from models import ActionModel, StyleModel
 import vip
+from vlms import GPT4V
 
 
 def make_prompt(description, top_n=3):
@@ -38,13 +42,13 @@ def extract_json(response, key):
   return parsed_json[key]
 
 
-def vip_perform_selection(prompter, vlm, im, desc, arm_coord, samples, top_n):
+def vip_perform_selection(prompter: vip.VisualIterativePrompter, vlm, im, desc, arm_coord, samples, top_n):
   """Perform one selection pass given samples."""
   image_circles_np = prompter.add_arrow_overlay_plt(
       image=im, samples=samples, arm_xy=arm_coord
   )
-
   _, encoded_image_circles = cv2.imencode(".png", image_circles_np)
+  
 
   prompt_seq = [make_prompt(desc, top_n=top_n), encoded_image_circles]
   response = vlm.query(prompt_seq)
@@ -58,24 +62,39 @@ def vip_perform_selection(prompter, vlm, im, desc, arm_coord, samples, top_n):
 
 
 def vip_runner(
-    vlm,
-    im,
-    desc,
-    style,
-    action_spec,
+    vlm: GPT4V,
+    im: np.ndarray,
+    desc: str,
+    style: StyleModel,
+    action_spec: ActionModel,
     n_samples_init=25,
     n_samples_opt=10,
     n_iters=3,
     n_parallel_trials=1,
-):
-  """VIP."""
+) -> Generator[tuple[list, str], None, tuple[list, str]]:
+  """Queries the VLM with PVIOT arrows
+  Args:
+    - vlm: a VLM wrapper to query GPT
+    - im: input (unmarked) image
+    - desc: description of task
+    - style: info about how the script should be run. See pydantic model for format
+    - action_spec: information for where arrows should be placed, etc.
+    - n_saples_init: how many initial points are sampled for the first PIVOT iteration.
+    - n_samples_opt: how many points are sampled for subsequent iterations
+    - n_iters: I'm assuming it's how many passes of the VLM it goes through
+    - n_parallel_trials: How many times to repeat this experiment (to average out?)
+  Returns:
+    - [], error if the query failed
+  Yields:
+    - (list[annotated_images], feedback string)
+  """
 
   prompter = vip.VisualIterativePrompter(
       style, action_spec, vip.SupportedEmbodiments.HF_DEMO
   )
 
   output_ims = []
-  arm_coord = (int(im.shape[1] / 2), int(im.shape[0] / 2))
+  arm_coord = action_spec["arm_coord"]
 
   new_samples = []
   center_mean = action_spec["loc"]

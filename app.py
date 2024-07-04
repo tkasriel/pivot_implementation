@@ -1,5 +1,6 @@
 """PIVOT Demo."""
 
+from typing import Generator
 import cv2
 import gradio as gr
 import numpy as np
@@ -13,13 +14,14 @@ radius_per_pixel = 0.05
 def run_vip(
     im: np.ndarray,
     query: str,
-    n_samples_init,
-    n_samples_opt,
-    n_iters: int,
-    n_parallel_trials: int,
+    n_samples_init: int,
+    n_samples_opt: int,
     openai_api_key: str,
+    arm_coords: tuple[int, int],
+    n_iters: int = 3,
+    n_parallel_trials: int = 1,
     progress=gr.Progress(track_tqdm=False),
-):
+) -> Generator[tuple[list, str], None, None]:
 
   if not openai_api_key:
     return [], 'Must provide OpenAI API Key'
@@ -29,12 +31,12 @@ def run_vip(
     return [], 'Must specify description'
   
   if im.shape[1] > 1024:
-    print(im.shape)
-    arm_coord = [2281 * 1024 // im.shape[1], (im.shape[0] - 2795) * 1024 // im.shape[1]]
+    # print(im.shape)
+    arm_coord = [int(arm_coords[0] * 1024 // im.shape[1]), int((im.shape[0] - arm_coords[1]) * 1024 // im.shape[1])]
     im = cv2.resize(im, (1024, (im.shape[0] * 1024 // im.shape[1])))
 
   img_size = np.min(im.shape[:2])
-  print(int(img_size * radius_per_pixel))
+  # print(int(img_size * radius_per_pixel))
   # add some action spec
   style = {
       'num_samples': 12,
@@ -194,9 +196,10 @@ if __name__ == "__main__":
             inp_query,
             inp_n_samples_init,
             inp_n_samples_opt,
+            inp_openai_api_key,
+            [200,200],
             inp_n_iters,
             inp_n_parallel_trials,
-            inp_openai_api_key,
         ],
         outputs=[out_ims, out_info],
     )

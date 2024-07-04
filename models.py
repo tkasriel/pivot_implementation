@@ -19,5 +19,6 @@ class ActionModel(TypedDict):
     min_scale: tuple[float, float, float]
     min: tuple[float, float, float]
     max: tuple[float, float, float]
+    arm_coord: tuple[int, int]
     action_to_coord: int
     robot: None

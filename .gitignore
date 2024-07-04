@@ -1,11 +1,8 @@
-__pycache__/models.cpython-312.pyc
-__pycache__/types.cpython-312.pyc
-__pycache__/vip_runner.cpython-312.pyc
-__pycache__/vip_utils.cpython-312.pyc
-__pycache__/vip.cpython-312.pyc
-__pycache__/vlms.cpython-312.pyc
-images/
+__pycache__/
+images/*
 metadata.json
 
 .env/
 .vscode/
+.env
+out_images/*

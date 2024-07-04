@@ -278,7 +278,6 @@ class VisualIterativePrompter:
         1 - self.style['arrow_alpha'],
         0,
     )
-    plt.imsave("test2.png", image)
 
     overlay = image.copy()
     # Add circles.

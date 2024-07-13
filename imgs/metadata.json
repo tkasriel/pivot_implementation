@@ -1,0 +1,1288 @@
+{
+  "side_2.5.JPG": {
+    "to_delete": true
+  },
+  "side_7.JPG": {
+    "to_delete": true
+  },
+  "side_10.5.JPG": {
+    "to_delete": true
+  },
+  "side_12.5.JPG": {
+    "to_delete": true
+  },
+  "side_5.JPG": {
+    "to_delete": true
+  },
+  "wrist_suction_translate_no_rotate.jpg": {
+    "block_center": [
+      1544,
+      1385
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 1.106727310317982,
+    "has_suction": true,
+    "suction_center": [
+      1533,
+      1216
+    ]
+  },
+  "side_16.5.JPG": {
+    "to_delete": true
+  },
+  "side_1.JPG": {
+    "to_delete": true
+  },
+  "side_4.5.JPG": {
+    "to_delete": true
+  },
+  "top_8.JPG": {
+    "to_delete": true
+  },
+  "side_suction_translate_rotate.jpg": {
+    "block_center": [
+      2175,
+      814
+    ],
+    "rotate": true,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": -2.81950731514138,
+    "has_suction": true,
+    "suction_center": [
+      2310,
+      761
+    ]
+  },
+  "side_3.JPG": {
+    "to_delete": true
+  },
+  "side_14.5.JPG": {
+    "to_delete": true
+  },
+  "side_2.JPG": {
+    "to_delete": true
+  },
+  "side_1.5.JPG": {
+    "to_delete": true
+  },
+  "top_no_suction_translate_no_rotate.jpg": {
+    "block_center": [
+      1889,
+      1407
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": 1.5446014464730269,
+    "has_suction": false
+  },
+  "side_13.5.JPG": {
+    "to_delete": true
+  },
+  "top_10.JPG": {
+    "to_delete": true
+  },
+  "side_20.JPG": {
+    "to_delete": true
+  },
+  "top_no_suction_translate_no_rotate2.jpg": {
+    "block_center": [
+      2069,
+      1955
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": -2.261528797761134,
+    "has_suction": false
+  },
+  "top_no_suction_translate_no_rotate3.jpg": {
+    "block_center": [
+      1574,
+      1489
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": 0.7625963108525415,
+    "has_suction": false
+  },
+  "side_11.5.JPG": {
+    "to_delete": true
+  },
+  "side_3.5.JPG": {
+    "to_delete": true
+  },
+  "side_15.5.JPG": {
+    "to_delete": true
+  },
+  "top_no_suction_translate_no_rotate4.jpg": {
+    "block_center": [
+      1651,
+      1922
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": -0.7135662460576456,
+    "has_suction": false
+  },
+  "side_7.5.JPG": {
+    "to_delete": true
+  },
+  "top_no_suction_translate_no_rotate5.jpg": {
+    "block_center": [
+      1942,
+      916
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": 1.4568811639090589,
+    "has_suction": false
+  },
+  "side_no_suction_translate_no_rotate.jpg": {
+    "block_center": [
+      993,
+      959
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 0.9212633381078802,
+    "has_suction": false
+  },
+  "top_no_suction_translate_no_rotate6.jpg": {
+    "block_center": [
+      1768,
+      2312
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": -3.1305155638724798,
+    "has_suction": false
+  },
+  "side_5.5.JPG": {
+    "to_delete": true
+  },
+  "top_no_suction_translate_no_rotate7.jpg": {
+    "block_center": [
+      1692,
+      1174
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": -0.016097094363733074,
+    "has_suction": false
+  },
+  "side_17.5.JPG": {
+    "to_delete": true
+  },
+  "side_19.JPG": {
+    "to_delete": true
+  },
+  "side_14.JPG": {
+    "to_delete": true
+  },
+  "top_no_suction_translate_no_rotate8.jpg": {
+    "block_center": [
+      1746,
+      1685
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": -0.7378682346391854,
+    "has_suction": false
+  },
+  "side_9.5.JPG": {
+    "to_delete": true
+  },
+  "top_no_suction_no_translate_no_rotate.jpg": {
+    "block_center": [
+      1831,
+      1358
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": true,
+    "has_suction": false
+  },
+  "side_no_suction_translate_no_rotate2.jpg": {
+    "block_center": [
+      1266,
+      1499
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 0,
+    "has_suction": false
+  },
+  "side_17.JPG": {
+    "to_delete": true
+  },
+  "side_19.5.JPG": {
+    "to_delete": true
+  },
+  "side_16.JPG": {
+    "to_delete": true
+  },
+  "side_20.5.JPG": {
+    "to_delete": true
+  },
+  "side_12.JPG": {
+    "to_delete": true
+  },
+  "side_13.JPG": {
+    "to_delete": true
+  },
+  "side_no_suction_translate_no_rotate3.jpg": {
+    "block_center": [
+      1146,
+      1374
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 0.7745731464625167,
+    "has_suction": false
+  },
+  "top_no_suction_translate_no_rotate9.jpg": {
+    "block_center": [
+      2601,
+      1448
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": -3.1134469349647635,
+    "has_suction": false
+  },
+  "side_10.JPG": {
+    "to_delete": true
+  },
+  "wrist_suction_translate_rotate.jpg": {
+    "block_center": [
+      1315,
+      1412
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 1.7606677567900084,
+    "has_suction": true,
+    "suction_center": [
+      1053,
+      1336
+    ]
+  },
+  "side_18.5.JPG": {
+    "to_delete": true
+  },
+  "top_7.JPG": {
+    "to_delete": true
+  },
+  "side_8.5.JPG": {
+    "to_delete": true
+  },
+  "top_5.JPG": {
+    "to_delete": true
+  },
+  "top_4.JPG": {
+    "to_delete": true
+  },
+  "side_9.JPG": {
+    "to_delete": true
+  },
+  "top_1.JPG": {
+    "to_delete": true
+  },
+  "side_8.JPG": {
+    "to_delete": true
+  },
+  "top_3.JPG": {
+    "to_delete": true
+  },
+  "top_2.JPG": {
+    "to_delete": true
+  },
+  "top_suction_translate_no_rotate2.jpg": {
+    "block_center": [
+      1398,
+      1697
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": 0,
+    "has_suction": true,
+    "suction_center": [
+      1398,
+      1697
+    ]
+  },
+  "top_no_suction_translate_rotate.jpg": {
+    "block_center": [
+      1836,
+      1603
+    ],
+    "rotate": true,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": 0.17038423167103442,
+    "has_suction": false
+  },
+  "side_no_suction_translate_rotate.jpg": {
+    "block_center": [
+      1315,
+      1461
+    ],
+    "rotate": true,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 1.53694472142874,
+    "has_suction": false
+  },
+  "side_no_suction_no_translate_no_rotate.jpg": {
+    "block_center": [
+      1539,
+      1668
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": true,
+    "has_suction": false
+  },
+  "side_no_suction_no_translate_rotate.jpg": {
+    "block_center": [
+      1462,
+      1374
+    ],
+    "rotate": true,
+    "view": "side",
+    "is_correct": true,
+    "has_suction": false
+  },
+  "top_no_suction_translate_rotate2.jpg": {
+    "block_center": [
+      1660,
+      1616
+    ],
+    "rotate": true,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": 0.7540867804431065,
+    "has_suction": false
+  },
+  "side_no_suction_translate_rotate2.jpg": {
+    "block_center": [
+      1048,
+      1598
+    ],
+    "rotate": true,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": -0.006430779517600815,
+    "has_suction": false
+  },
+  "top_no_suction_translate_rotate3.jpg": {
+    "block_center": [
+      2179,
+      1669
+    ],
+    "rotate": true,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": 3.141592653589793,
+    "has_suction": false
+  },
+  "top_no_suction_translate_rotate4.jpg": {
+    "block_center": [
+      1773,
+      1619
+    ],
+    "rotate": true,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": 3.141592653589793,
+    "has_suction": false
+  },
+  "side_no_suction_translate_rotate3.jpg": {
+    "block_center": [
+      1817,
+      1619
+    ],
+    "rotate": true,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 3.129219831681705,
+    "has_suction": false
+  },
+  "top_no_suction_no_translate_no_rotate2.jpg": {
+    "block_center": [
+      1656,
+      1526
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": true,
+    "has_suction": false
+  },
+  "side_no_suction_translate_no_rotate4.jpg": {
+    "block_center": [
+      1086,
+      1298
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 0.9327984466628826,
+    "has_suction": false
+  },
+  "side_no_suction_no_translate_no_rotate2.jpg": {
+    "block_center": [
+      1533,
+      1407
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": true,
+    "has_suction": false
+  },
+  "side_no_suction_translate_no_rotate5.jpg": {
+    "block_center": [
+      1113,
+      1516
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 0,
+    "has_suction": false
+  },
+  "top_no_suction_no_translate_no_rotate3.jpg": {
+    "block_center": [
+      1897,
+      1665
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": true,
+    "has_suction": false
+  },
+  "side_no_suction_translate_no_rotate6.jpg": {
+    "block_center": [
+      1484,
+      1096
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 2.961247027852792,
+    "has_suction": false
+  },
+  "side_no_suction_translate_no_rotate7.jpg": {
+    "block_center": [
+      1141,
+      1418
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 0,
+    "has_suction": false
+  },
+  "side_no_suction_no_translate_rotate2.jpg": {
+    "block_center": [
+      1097,
+      1707
+    ],
+    "rotate": true,
+    "view": "side",
+    "is_correct": true,
+    "has_suction": false
+  },
+  "side_no_suction_translate_no_rotate8.jpg": {
+    "block_center": [
+      1681,
+      1374
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": -3.13120586943703,
+    "has_suction": false
+  },
+  "side_no_suction_translate_rotate4.jpg": {
+    "block_center": [
+      1293,
+      1538
+    ],
+    "rotate": true,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 1.4760484732675818,
+    "has_suction": false
+  },
+  "side_no_suction_translate_no_rotate9.jpg": {
+    "block_center": [
+      1702,
+      1390
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 3.141592653589793,
+    "has_suction": false
+  },
+  "side_no_suction_translate_rotate5.jpg": {
+    "block_center": [
+      1522,
+      1570
+    ],
+    "rotate": true,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 3.050932766389048,
+    "has_suction": false
+  },
+  "side_no_suction_translate_no_rotate10.jpg": {
+    "block_center": [
+      1604,
+      1554
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 3.0254744163341614,
+    "has_suction": false
+  },
+  "top_no_suction_no_translate_rotate.jpg": {
+    "block_center": [
+      1848,
+      1693
+    ],
+    "rotate": true,
+    "view": "top",
+    "is_correct": true,
+    "has_suction": false
+  },
+  "top_no_suction_no_translate_no_rotate4.jpg": {
+    "block_center": [
+      1495,
+      1816
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": true,
+    "has_suction": false
+  },
+  "top_no_suction_translate_no_rotate10.jpg": {
+    "block_center": [
+      1668,
+      1452
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": -0.04133673363654935,
+    "has_suction": false
+  },
+  "top_no_suction_translate_no_rotate11.jpg": {
+    "block_center": [
+      2114,
+      1763
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": -2.3879711795472196,
+    "has_suction": false
+  },
+  "top_no_suction_translate_no_rotate12.jpg": {
+    "block_center": [
+      2077,
+      801
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": 3.1311157377570877,
+    "has_suction": false
+  },
+  "top_no_suction_translate_no_rotate13.jpg": {
+    "block_center": [
+      1897,
+      1472
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": 1.5707963267948966,
+    "has_suction": false
+  },
+  "top_no_suction_translate_no_rotate14.jpg": {
+    "block_center": [
+      2159,
+      977
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": 3.049097157600221,
+    "has_suction": false
+  },
+  "top_no_suction_translate_no_rotate15.jpg": {
+    "block_center": [
+      2151,
+      728
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": 3.0763587118374747,
+    "has_suction": false
+  },
+  "top_no_suction_translate_no_rotate16.jpg": {
+    "block_center": [
+      2052,
+      1554
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": false,
+    "target_direction": -3.1320917518247184,
+    "has_suction": false
+  },
+  "top_no_suction_no_translate_no_rotate5.jpg": {
+    "block_center": [
+      1868,
+      1309
+    ],
+    "rotate": false,
+    "view": "top",
+    "is_correct": true,
+    "has_suction": false
+  },
+  "side_no_suction_translate_no_rotate11.jpg": {
+    "block_center": [
+      1408,
+      981
+    ],
+    "rotate": false,
+    "view": "side",
+    "is_correct": false,
+    "target_direction": 2.1164275933205605,
+    "has_suction": false
+  },
+  "wrist_suction_translate_no_rotate2.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 0.7122305817098984,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate2.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 1.202100424136847,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate3.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 2.1338457081223976,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate4.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": -0.8990613875412244,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate3.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 1.3707435544213504,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate5.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": -0.05888381452354803,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate4.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 0.46562584578720784,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate5.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 1.6529638491565966,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate6.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": -0.7876970099225845,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate6.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 0.9176012636524736,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate7.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 2.6124650196655224,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate8.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 2.3101911644321085,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate9.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 1.701565064961935,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate7.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 0.6882688655293397,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate10.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 2.63759689521804,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate8.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 1.454210321333581,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate9.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 2.1245657340330837,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate11.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 0.9403949053213893,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_no_translate_no_rotate.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": true,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate12.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 0.41159230246249023,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate10.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": -0.6348965270577163,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_no_translate_no_rotate2.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": true,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate13.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 1.1456971055296532,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate11.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": -2.8418165834898135,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate12.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": -0.7483780475235183,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate13.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 1.7475854848000372,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate14.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 0.8954844454384049,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate14.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 2.7367008673047097,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_no_translate_no_rotate3.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": true,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_no_translate_no_rotate4.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": true,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate15.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": -3.041055568837573,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate15.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 3.0590221978950765,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate16.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 1.9871541163112685,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate16.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 2.149188975249476,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "22-rgb.png": {
+    "to_delete": true
+  },
+  "wrist_suction_translate_rotate17.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 2.44444948478404,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "7-rgb.png": {
+    "to_delete": true
+  },
+  "wrist_suction_translate_no_rotate17.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": -2.9441970937399127,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_no_rotate18.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 2.6691311702654326,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_no_translate_rotate.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": true,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "23-rgb.png": {
+    "to_delete": true
+  },
+  "wrist_suction_translate_no_rotate19.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": false,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 2.7798201912547436,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  },
+  "wrist_suction_translate_rotate18.jpg": {
+    "block_center": [
+      686,
+      269
+    ],
+    "rotate": true,
+    "view": "wrist",
+    "is_correct": false,
+    "target_direction": 0.8316003988601693,
+    "has_suction": true,
+    "suction_center": [
+      652,
+      224
+    ]
+  }
+}

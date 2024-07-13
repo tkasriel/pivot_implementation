@@ -1,6 +1,4 @@
 __pycache__/
-images/*
-metadata.json
 .mypy_cache
 venv
 .env/

@@ -45,7 +45,6 @@ VALUE_COUNT = 8 # view, block_center_x, block_center_y, suction_x, suction_y, ta
 imgs = map(lambda x: os.path.basename(x), glob.glob("imgs/*.JPG") + glob.glob("imgs/*.jpg") + glob.glob("imgs/*.png"))
 fig = plt.figure()
 coords: list[Any] = []
-file = open("out.csv", "w")
 
 img_file = ""
 ignore_files = []
@@ -126,7 +125,7 @@ def end_img():
 	next_img()
 
 def save_img():
-	global coords, img_file
+	global coords, img_file, out_dict
 	view = coords[0]
 	bcenter = (coords[1], coords[2])
 	suction = (coords[3], coords[4])
@@ -135,7 +134,7 @@ def save_img():
 	new_name_base = f"{view}_{"suction" if suction[0] else "no_suction"}_{"translate" if target[0] else "no_translate"}_{"rotate" if rotate else "no_rotate"}"
 	new_name = new_name_base
 	i = 2
-	while os.path.exists(f"imgs/{new_name}.jpg"):
+	while f"{new_name}.jpg" in out_dict.keys():
 		new_name = new_name_base + str(i)
 		i += 1
 	os.rename(f"imgs/{img_file}", f"imgs/{new_name}.jpg")

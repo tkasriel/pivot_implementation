@@ -44,6 +44,7 @@ def extract_json(response, key):
 
 def vip_perform_selection(prompter: vip.VisualIterativePrompter, vlm, im, desc, arm_coord, samples, top_n):
   """Perform one selection pass given samples."""
+  print("I was run!!\n\n\n")
   image_circles_np = prompter.add_arrow_overlay_plt(
       image=im, samples=samples, arm_xy=arm_coord
   )
@@ -58,10 +59,14 @@ def vip_perform_selection(prompter: vip.VisualIterativePrompter, vlm, im, desc, 
   except Exception as e:
     print(e)
     arrow_ids = []
+  # for arrow_id in arrow_ids:
+  #   if arrow_id >= len(samples):
+  #     print(arrow_id)
+  #     print(response)
   return arrow_ids, image_circles_np
 
 
-def vip_runner(
+async def vip_runner(
     vlm: GPT4V,
     im: np.ndarray,
     desc: str,
@@ -71,7 +76,7 @@ def vip_runner(
     n_samples_opt=10,
     n_iters=3,
     n_parallel_trials=1,
-) -> Generator[tuple[list, str], None, tuple[list, str]]:
+) -> tuple[int, int]:
   """Queries the VLM with PVIOT arrows
   Args:
     - vlm: a VLM wrapper to query GPT
@@ -121,7 +126,7 @@ def vip_runner(
           image_circles_np, selected_samples, arm_coord
       )
       output_ims.append(image_circles_marked_np)
-      yield output_ims, f"Image generated for parallel sample {i+1}/{n_parallel_trials} iteration {itr+1}/{n_iters}. Still working..."
+      # yield output_ims, f"Image generated for parallel sample {i+1}/{n_parallel_trials} iteration {itr+1}/{n_iters}. Still working..."
 
       # if at last iteration, pick one answer out of the selected ones
       if itr == n_iters - 1:
@@ -139,7 +144,7 @@ def vip_runner(
         )
         output_ims.append(image_circles_marked_np)
         new_samples += selected_samples
-        yield output_ims, f"Image generated for parallel sample {i+1}/{n_parallel_trials} last iteration. Still working..."
+        # yield output_ims, f"Image generated for parallel sample {i+1}/{n_parallel_trials} last iteration. Still working..."
       center_mean, center_std = prompter.fit(arrow_ids, samples)
 
   if n_parallel_trials > 1:
@@ -161,12 +166,4 @@ def vip_runner(
     output_ims.append(image_circles_marked_np)
     center_mean, _ = prompter.fit(arrow_ids, new_samples)
 
-  if output_ims:
-    yield (
-        output_ims,
-        (
-            "Final selected coordinate:"
-            f" {np.round(prompter.action_to_coord(center_mean, im, arm_coord).xy, decimals=0)}"
-        ),
-    )
-  return [], "Unable to understand query"
+  return np.round(prompter.action_to_coord(center_mean, im, arm_coord).xy, decimals=0)

@@ -11,7 +11,7 @@ from vlms import GPT4V
 radius_per_pixel = 0.05
 
 
-def run_vip(
+async def run_vip(
     im: np.ndarray,
     query: str,
     n_samples_init: int,
@@ -21,7 +21,7 @@ def run_vip(
     n_iters: int = 3,
     n_parallel_trials: int = 1,
     progress=gr.Progress(track_tqdm=False),
-) -> Generator[tuple[list, str], None, None]:
+) -> tuple[int, int] | tuple[list, str]:
 
   if not openai_api_key:
     return [], 'Must provide OpenAI API Key'
@@ -62,7 +62,7 @@ def run_vip(
   }
 
   vlm = GPT4V(openai_api_key=openai_api_key)
-  vip_gen = vip_runner(
+  vip_gen = await vip_runner(
       vlm,
       im,
       query,
@@ -73,8 +73,7 @@ def run_vip(
       n_iters=n_iters,
       n_parallel_trials=n_parallel_trials,
   )
-  for rst in vip_gen:
-    yield rst 
+  return vlp_gen
 
 
 examples = [

@@ -12,7 +12,6 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.stats
-from models import ActionModel
 import vip_utils
 
 
@@ -51,7 +50,7 @@ class Sample:
 class VisualIterativePrompter:
   """Visual Iterative Prompting class."""
 
-  def __init__(self, style, action_spec: ActionModel, embodiment):
+  def __init__(self, style, action_spec: dict[str, Any], embodiment):
     self.embodiment = embodiment
     self.style = style
     self.action_spec = action_spec
@@ -83,6 +82,8 @@ class VisualIterativePrompter:
       Dict coordinate with image x, y, arrow color, and circle radius.
     """
     if self.action_spec['scale'][0] == 0:  # no z dimension
+      if not type(action) is np.ndarray:
+        breakpoint()
       norm_action = [
           (action[d] - self.action_spec['loc'][d])
           / (2 * self.action_spec['scale'][d])
@@ -149,7 +150,7 @@ class VisualIterativePrompter:
 
   def sample_actions(
       self, image, arm_xy, loc, scale, true_action=None, max_itrs=1000
-  ):
+  ) -> list[Sample]:
     """Sample actions from distribution.
 
     Args:
@@ -243,7 +244,7 @@ class VisualIterativePrompter:
       samples.append(sample)
     return samples
 
-  def add_arrow_overlay_plt(self, image: np.ndarray, samples, arm_xy):
+  def add_arrow_overlay_plt(self, image: np.ndarray, samples: list[Sample], arm_xy) -> np.ndarray:
     """Add arrows and circles to the image.
 
     Args:
@@ -373,7 +374,7 @@ class VisualIterativePrompter:
     elif len(values) == 1:  # single response, add a distribution over it
       index = np.where([label == str(values[-1]) for label in labels])[0][0]
       action = actions[index]
-      print('action', action)
+      # print('action', action)
       loc = action
       scale = self.action_spec['min_scale']
     else:  # fit distribution
@@ -381,7 +382,7 @@ class VisualIterativePrompter:
       for value in values:
         idx = np.where([label == str(value) for label in labels])[0][0]
         selected_actions.append(actions[idx])
-      print('selected_actions', selected_actions)
+      # print('selected_actions', selected_actions)
 
       loc_scale = [
           scipy.stats.norm.fit([action[d] for action in selected_actions])
@@ -393,6 +394,6 @@ class VisualIterativePrompter:
           self.action_spec['min_scale'],
           None,
       )
-      print('loc', loc, '\nscale', scale)
+      # print('loc', loc, '\nscale', scale)
 
     return loc, scale

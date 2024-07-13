@@ -1,8 +1,15 @@
 __pycache__/
 images/*
 metadata.json
-
+.mypy_cache
+venv
 .env/
 .vscode/
 .env
+
 out_images/*
+*.jpg
+*.JPG
+*.png
+test.txt
+out/*.txt

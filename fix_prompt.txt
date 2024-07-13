@@ -1,0 +1,1 @@
+Which arrow best represents the direction which the top block should be moved to best cover the block underneath it?
